@@ -2,6 +2,8 @@
 
 In short, when Flash scoped attributes are added in a @Controller method and then a redirect is executed by returning a type of `ResponseBody` with an HTTP status of 302 Found, the Flash scoped attributes are lost.
 
+To run this project, `./mvw spring-boot:run` and navigate to http://localhost:8080, then try http://localhost:8080/good, then try http://localhost:8080/bad.
+
 ```Java
 @Controller
 public class DemoController {
